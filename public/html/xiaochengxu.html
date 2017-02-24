@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<view> Hello {{name}}! </view>
+<button bindtap="changeName"> Click me! </button>
+<script>
+    var helloData = {
+        name: 'WeChat'
+    }
+
+    // Register a Page.
+    Page({
+        data: helloData,
+        changeName: function(e) {
+            // sent data change to view
+            this.setData({
+                name: 'MINA'
+            })
+        }
+    })
+</script>
+</body>
+</html>

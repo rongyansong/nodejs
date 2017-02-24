@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .tab{
+            display: table;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            height: 60px;
+        }
+        .tab li{
+            display: table-cell;
+            height: 60px;
+            line-height: 60px;
+        }
+        .tab li.active{
+            border-bottom: 2px solid #2A9F9C;
+            color: #2A9F9C;
+        }
+        .tab_content div{
+
+        }
+    </style>
+</head>
+<body>
+<ul class="tab">
+    <li class="active">
+        tab1
+    </li>
+    <li>
+        tab2
+    </li>
+    <li>
+        tab3
+    </li>
+</ul>
+<div class="tab_content">
+    <div class="active">tab1</div>
+    <div>tab2</div>
+    <div>tab3</div>
+</div>
+</body>
+</html>

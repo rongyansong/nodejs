@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type = "text/javascript" language = "javascript">
+        function clear1()
+        {
+            if(confirm("确定要清空数据吗？"))
+            {
+                document.main.text1.value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="main">
+    <input type="text" name="text1" />
+    <input type="button" name="Submit" value="清空数据" onClick="return clear1();">
+</form>
+</body>
+</html>

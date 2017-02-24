@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function changeF() {
+        document.getElementById('makeupCo').value = document.getElementById('makeupCoSe').options[document.getElementById('makeupCoSe').selectedIndex].value;
+    }
+</script>
+<span style="position:absolute;border:1pt solid #DCDCDC;overflow:hidden;width:100px;border-radius: 5px; height:23px;clip:rect(-1px 110px 110px 90px);">
+<select name="makeupCoSe" id="makeupCoSe"
+        style="width:105px;height:25px;margin:-1px;border-radius: 5px;border-color:#DCDCDC;border-top-color:transparent"
+        onChange="changeF();">
+    <option value='java'>java</option>
+    <option value='c++'>c++</option>
+    <option value='python'>python</option>
+</select>
+</span>
+<span style="position:absolute;border-top:1pt solid #DCDCDC;border-left:1pt solid #DCDCDC;border-bottom:1pt solid #DCDCDC;width:90px;height:23px;border-radius: 5px 0 0 5px">
+    <input type="text" name="makeupCo" id="makeupCo" value="请选择或输入"
+           style="width:82px;height:20px;border:0pt;color:#666;margin-left: 5px;">
+</span>
+</body>
+</html>

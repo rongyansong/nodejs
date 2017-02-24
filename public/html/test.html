@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+    <title>11111112223333334444444</title>
+    <script src="../js/zepto.js"></script>
+</head>
+<body>
+<h1>click me</h1>
+<p>welcome!</p>
+<script>
+    $('h1').click(function(){
+        $.ajax({
+            url:'/test',
+            type: 'get',
+            success: function (msg){
+                console.log('skjdfk');
+                console.log(msg);
+                $('p').html(msg.data);
+            }
+        })
+    })
+    var text = document.title;
+    var timer;
+    function newtext(){
+        clearTimeout(timer);
+        document.title = text.substring(1,text.length) + text.substring(0,1);
+        text = document.title.substring(0,text.length);
+        timer = setTimeout("newtext()",100);
+    }
+
+</script>
+</body>
+</html>
